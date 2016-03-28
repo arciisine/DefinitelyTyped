@@ -9,6 +9,7 @@ declare module "gm" {
 	import stream = require('stream');
 
 	function m(image: string): m.State;
+	function m(stream:NodeJS.ReadableStream, name: string): m.State;
 
 	namespace m {
 		export interface ClassOptions {
